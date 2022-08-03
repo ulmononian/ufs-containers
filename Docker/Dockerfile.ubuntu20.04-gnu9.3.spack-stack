@@ -13,6 +13,5 @@ RUN source ./setup.sh && \
     spack install 2>&1 | tee install.log && \
     yes "y" 2>/dev/null | spack module lmod refresh && \
     spack stack setup-meta-modules
-RUN source /usr/share/lmod/lmod/init/bash
 
 
